@@ -7,10 +7,9 @@
     "require": {
         "php": "^7.4",
         "mono-page/contracts": "^v0.0.1@dev",
-        "mono-page/domain": "^v0.0.1@dev",
+        "mono-page/properties": "^v0.0.1@dev",
         "mono-page/languages": "^v0.0.1@dev",
-        "mono-page/languages-repository-default": "^v0.0.1@dev",
-        "symfony/dependency-injection": "^5.0"
+        "mono-page/languages-repository-default": "^v0.0.1@dev"
     },
     "autoload": {
         "psr-4": {
@@ -19,29 +18,13 @@
     },
     "config": {
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "preferred-update": "dist"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "v0.0.1-dev"
         }
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "/home/iiifx/MonoPage/contracts"
-        },
-        {
-            "type": "git",
-            "url": "/home/iiifx/MonoPage/domain"
-        },
-        {
-            "type": "git",
-            "url": "/home/iiifx/MonoPage/languages"
-        },
-        {
-            "type": "git",
-            "url": "/home/iiifx/MonoPage/languages-repository-default"
-        }
-    ]
+    }
 }
